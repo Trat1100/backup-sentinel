@@ -62,4 +62,4 @@ GitHub Actions runs the tests on Python 3.11 and 3.12.
 - A matching checksum only proves the backup matches its sidecar. Store manifests separately or sign them to detect an attacker who can rewrite both.
 - The tool does not prove that a database or archive can be restored. Regular restore drills remain necessary.
 - It does not connect to cloud object storage, backup agents, or monitoring platforms.
-- No license is included pending the owner's license choice.
+- Licensed under MIT; see the included `LICENSE` file.
