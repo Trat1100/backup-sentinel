@@ -1,0 +1,20 @@
+{
+  "backup_sets": [
+    {
+      "name": "nightly-database",
+      "path": "./backups/database",
+      "include": ["*.sql.gz"],
+      "max_age_hours": 26,
+      "minimum_files": 1,
+      "verify_sidecars": true
+    },
+    {
+      "name": "weekly-files",
+      "path": "./backups/files",
+      "include": ["*.tar.zst", "*.tar.gz"],
+      "max_age_hours": 180,
+      "minimum_files": 1,
+      "verify_sidecars": false
+    }
+  ]
+}

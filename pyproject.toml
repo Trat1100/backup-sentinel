@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backup-sentinel"
+version = "0.1.0"
+description = "Read-only freshness and checksum audits for local backup directories"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "setuptools>=69", "wheel"]
+
+[project.scripts]
+backup-sentinel = "backup_sentinel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["backup_sentinel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
