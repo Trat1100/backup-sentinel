@@ -1,5 +1,11 @@
 # Backup Sentinel
 
+## Live demo
+
+![Backup Sentinel actual command-line output](docs/screenshots/backup-sentinel-live-demo.svg)
+
+Live CLI output from synthetic backup directories. One backup is healthy; another is intentionally stale with a mismatched checksum. Local paths are shortened.
+
 Backup Sentinel is a read-only command-line audit for scheduled backup folders. It checks whether expected backup files exist, whether the newest file is within an age limit, and optionally whether each file matches its adjacent SHA-256 sidecar.
 
 It is designed for small teams and server owners who need a simple, scriptable check that backup jobs are still producing files and that stored copies have not changed since their checksums were written.
